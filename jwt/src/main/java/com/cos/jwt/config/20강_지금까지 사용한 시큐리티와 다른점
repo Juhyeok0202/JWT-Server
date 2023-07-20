@@ -1,0 +1,10 @@
+Stateless 서버를 사용한다는 것.
+: Stateless 방식을 사용한다는 것은 session을 사용하지 않겠다는 것이다.
+기본적으로 Web은 Stateless인데,
+그 Stateless를 StateFull처럼 사용하기 위해
+세션을 만들고 쿠키를 만드는것. 이 방식을 사용하지 않겠다는 의미.
+
+CorsOrigin 정책에서 벗어난 서버라는 것. -> 모든 요청 허용
+
+form로그인 허용 안할 것이라는 점
+: form 태그 만들어서 로그인 안한다는 것

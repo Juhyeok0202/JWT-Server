@@ -1,0 +1,18 @@
+username,password 로그인 정상
+
+서버쪽 세션 ID생성
+클라이언트에게 쿠키 세션ID를 응답
+
+요청할 때마다 쿠키값 세션ID를 항상 들고 서버쪽으로 요청하기 때문에
+서버는 세션ID가 유효한지 판단해서 유효하면 인증이 필요한 페이지로 접근하게 하면됨.
+
+
+JWT는!!
+username, password 로그인 정상 이면,
+JWT토큰을 생성
+클라이언트 쪽으로 JWT 토큰을 응답
+
+요청할 때마다 JWT토큰을 가지고 요청
+그럼 서버는 JWT이 유효한 지를 판단해야하는데 지금 이걸 하는 필터가 없음
+=> 이 필터를 만들어야 함. (27강에서 만듦)
+Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb3PthqDtgbAiLCJpZCI6MSwiZXhwIjoxNjg5NzkwNDMwLCJ1c2VybmFtZSI6InNzYXIifQ.wG-fuM63tTV0Nw3UTS42QaFYGhSQL9-SQ9bKGf2PnwY
